@@ -22,8 +22,8 @@ def rms_b(sampled_signal):
 
 
 # An = √(an^2 + bn^2)
-# an = 2 / M * Σ(an * cos((2 * 𝜋 * n) / M))
-# bn = 2 / M * Σ(an * sin((2 * 𝜋 * n) / M))
+# an = 2 / M * Σ(an * cos(2 * 𝜋 * n / M))
+# bn = 2 / M * Σ(an * sin(2 * 𝜋 * n / M))
 def fourier_amplitude(sampled_signal):
     big_m = len(sampled_signal)
     an, bn = 0, 0
